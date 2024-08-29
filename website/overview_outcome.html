@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- logo on tab-->
+	<link rel="shortcut icon" href="../resources/images/wood-951875_960_720.jpeg" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-site-verification" content="Cn_GGElo-cbNkuj65G4fN_F-MR20NoOdTx_rlckOEPU" />
+
+    <!-- import font -->
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Introduction to Theory of Computation">
+	<meta name="author" content="Mia Minnes">
+
+	<title>Discrete Math for CS</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!---Collapsible Menu-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/sidebarStyle.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- icons for side menu -->
+	<link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' >
+	<link rel="shortcut icon" href="../resources/images/wood-951875_960_720.jpeg" type="image/x-icon">
+</head>
+	
+
+<body>
+    
+    <!-- Insert sidebar -->
+     <div class="sidebar">
+		<li><a href= " courseInfo.html" aria-label="Go to Home "><i class='bx bx-home-smile'></i><span class="links_name"> Home</span></a><span class="tooltip"> Home</span></li>
+	
+			
+			<ul class="nav-list">
+			
+			<li>
+				<a href=overview_outcome.html aria-label="Go toOverview">
+					<i class='bx bxs-shapes'></i>
+					<span class="links_name">Overview</span>
+				</a>
+				<span class="tooltip">Overview</span>
+			</li><li><a href= "systems.html?box=1" aria-label="Go to Model systems "><i><p class="icons">&nbsp;&nbsp;S</p></i><span class="links_name"> Model systems</span></a><span class="tooltip"> Model systems</span></li>
+<li><a href= "translate.html?box=1" aria-label="Go to Translate "><i><p class="icons">&nbsp;&nbsp;T</p></i><span class="links_name"> Translate</span></a><span class="tooltip"> Translate</span></li>
+<li><a href= "logic.html?box=1" aria-label="Go to Propositional and predicate logic "><i><p class="icons">&nbsp;&nbsp;L</p></i><span class="links_name"> Propositional and predicate logic</span></a><span class="tooltip"> Propositional and predicate logic</span></li>
+<li><a href= "proofs.html?box=1" aria-label="Go to Proof strategies and valid arguments "><i><p class="icons">&nbsp;&nbsp;P</p></i><span class="links_name"> Proof strategies and valid arguments</span></a><span class="tooltip"> Proof strategies and valid arguments</span></li>
+<li><a href= "induction.html?box=1" aria-label="Go to Recursion and Induction "><i><p class="icons">&nbsp;&nbsp;I</p></i><span class="links_name"> Recursion and Induction</span></a><span class="tooltip"> Recursion and Induction</span></li>
+<li><a href= "modular.html?box=1" aria-label="Go to Modular Arithmetic "><i><p class="icons">&nbsp;&nbsp;M</p></i><span class="links_name"> Modular Arithmetic</span></a><span class="tooltip"> Modular Arithmetic</span></li>
+<li><a href= "conventions.html?box=1" aria-label="Go to Use language conventions to improve arguments "><i><p class="icons">&nbsp;&nbsp;U</p></i><span class="links_name"> Use language conventions to improve arguments</span></a><span class="tooltip"> Use language conventions to improve arguments</span></li>
+<li><a href= "notation.html?box=1" aria-label="Go to Mathematical definitions and notation "><i><p class="icons">&nbsp;&nbsp;N</p></i><span class="links_name"> Mathematical definitions and notation</span></a><span class="tooltip"> Mathematical definitions and notation</span></li>
+</ul> </div> 
+	        <script>
+		    let sidebar = document.querySelector(".sidebar");
+		    let closeBtn = document.querySelector("#btn");
+		
+		    closeBtn.addEventListener("click", ()=>{
+			    sidebar.classList.toggle("open");
+			    menuBtnChange();//calling the function(optional)
+		    });
+		
+		    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+			    sidebar.classList.toggle("open");
+			    menuBtnChange(); //calling the function(optional)
+		    });
+		
+		    // following are the code to change sidebar button(optional)
+		    function menuBtnChange() {
+			    if(sidebar.classList.contains("open")){
+				    closeBtn.classList.replace("bx-chevron-right", "bx-chevron-left");//replacing the iocns class
+			    }
+			    else {
+				    closeBtn.classList.replace("bx-chevron-left","bx-chevron-right");//replacing the iocns class
+			    }
+		    }
+	        </script>
+
+    <!-- Insert mobile sidebar-->
+     <div id="mySidebar" class="collapsedSidebar">
+			<a href=index.html class="homeMobile"> Discrete Math for CS</a> <!--NAME-->
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×&nbsp;</a>
+			<a href=overview_outcome.html>Overview</a><a href= "systems.html"">Model systems</a><a href= "translate.html"">Translate</a><a href= "logic.html"">Propositional and predicate logic</a><a href= "proofs.html"">Proof strategies and valid arguments</a><a href= "induction.html"">Recursion and Induction</a><a href= "modular.html"">Modular Arithmetic</a><a href= "conventions.html"">Use language conventions to improve arguments</a><a href= "notation.html"">Mathematical definitions and notation</a> </div>
+
+		<div class="openbutton">
+			<button class="openbtn"  onclick="openNav()">☰ Menu</button> 
+		</div> 
+		  
+		<script>
+		  function openNav() {
+			document.getElementById("mySidebar").style.width = "100%";
+			document.getElementById("content").style.marginLeft = "100%";
+		  }
+		  
+		  function closeNav() {
+			document.getElementById("mySidebar").style.width = "0";
+			document.getElementById("content").style.marginLeft= "0";
+		  }
+		</script>
+		
+
+    
+	
+    <div class="content">
+
+    <!-- <script async src="https://cse.google.com/cse.js?cx=ee1b5ada3b391867f"></script>
+    <div class="gcse-search"></div> -->
+		
+    <h1 style="font-size: 50px;"><a href="overview_outcome.html" aria-label="Go to Overview" style="color: #337ab7; text-decoration: none;">Overview</a></h1>
+	
+	<!-- Template starts here -->
+    <div class="box"> 
+<h2><i class='bx bxs-paper-plane'></i>Modeling and Impact</h2><p> Description: Understand, guide, shape impact of computing on society/the world. Connect the role of Theory CS classes to other applications (in undergraduate CS curriculum and beyond). Model problems using appropriate mathematical concepts.</p><hr><div class="column"> <dl> 
+<dt><i class='bx bx-subdirectory-right' ></i><a href="systems.html?box=1" >Model systems</a></dt> 
+<dd> <a href="systems.html?box=1" >Selecting and representing appropriate data types and using notation conventions to clearly communicate choices</a> </dd>
+<dd> <a href="systems.html?box=2" >Connecting logical circuits and compound proposition and tracing to calcluate output values</a> </dd>
+<dd> <a href="systems.html?box=3" >Determining the properties of positional number representations, including overflow and bit operations</a> </dd>
+<dd> <a href="systems.html?box=4" >Modeling data structures, such as linked lists or trees, as recursively defined data structures</a> </dd>
+<dd> <a href="systems.html?box=5" >Modeling data with partitions and functions</a> </dd>
+</dl><dt><i class='bx bx-subdirectory-right' ></i><a href="translate.html?box=1" >Translate</a></dt> 
+<dd> <a href="translate.html?box=1" >Translating between symbolic and English versions of statements using precise mathematical language</a> </dd>
+<dd> <a href="translate.html?box=2" >Tracing algorithms specified in pseudocode</a> </dd>
+<dd> <a href="translate.html?box=3" >Representing numbers using positional representations, including decimal, binary, hexadecimal, fixed-width representations, and 2s complement</a> </dd>
+<dd> <a href="translate.html?box=4" >Translating between truth tables (tables of values) and compound propositions</a> </dd>
+<dd> <a href="translate.html?box=5" >Drawing graph representations of relations and functions e.g. Hasse diagram and partition diagram</a> </dd>
+</dl></div></div><br><br><div class="box"> 
+<h2><i class='bx bxs-bulb' ></i>Problem Solving</h2><p> Description: Know, select and apply appropriate computing knowledge and problem-solving techniques. Reason about computation and systems. Use mathematical techniques to solve problems. Determine appropriate conceptual tools to apply to new situations. Know when tools do not apply and try different approaches. Critically analyze and evaluate candidate solutions.</p><hr><div class="column"> <dl> 
+<dt><i class='bx bx-subdirectory-right' ></i><a href="logic.html?box=1" >Propositional and predicate logic</a></dt> 
+<dd> <a href="logic.html?box=1" >Evaluating compound propositions</a> </dd>
+<dd> <a href="logic.html?box=2" >Judging logical equivalence of compound propositions using symbolic manipulation with known equivalences, including DeMorgan's Law</a> </dd>
+<dd> <a href="logic.html?box=3" >Judging logical equivalence of compound propositions using truth tables</a> </dd>
+<dd> <a href="logic.html?box=4" >Rewriting compound propositions using normal forms</a> </dd>
+<dd> <a href="logic.html?box=5" >Judging whether a collection of propositions is consistent</a> </dd>
+<dd> <a href="logic.html?box=6" >Writing the converse, contrapositive, and inverse of a given conditional statement</a> </dd>
+<dd> <a href="logic.html?box=7" >Determining what evidence is required to establish that a quantified statement is true or false</a> </dd>
+<dd> <a href="logic.html?box=8" >Evaluating quantified statements about finite and infinite domains</a> </dd>
+</dl><dt><i class='bx bx-subdirectory-right' ></i><a href="proofs.html?box=1" >Proof strategies and valid arguments</a></dt> 
+<dd> <a href="proofs.html?box=1" >Identifying the proof strategies used in a given proof</a> </dd>
+<dd> <a href="proofs.html?box=2" >Identifying which proof strategies are applicable to prove a given compound proposition based on its logical structure</a> </dd>
+<dd> <a href="proofs.html?box=3" >Carrying out a given proof strategy to prove a given statement</a> </dd>
+<dd> <a href="proofs.html?box=4" >Carrying out a universal generalization argument to prove that a universal statement is true</a> </dd>
+<dd> <a href="proofs.html?box=5" >Tracing and/or modifying a proof by contradiction</a> </dd>
+<dd> <a href="proofs.html?box=6" >Using proofs as knowledge discovery tools to decide whether a statement is true or false</a> </dd>
+</dl><dt><i class='bx bx-subdirectory-right' ></i><a href="induction.html?box=1" >Recursion and Induction</a></dt> 
+<dd> <a href="induction.html?box=1" >Using a recursive definition to evaluate a function or determine membership in a set</a> </dd>
+<dd> <a href="induction.html?box=2" >Using mathematical induction to prove mathematical identities, inequalities, and other invariants</a> </dd>
+<dd> <a href="induction.html?box=3" >Using strong induction to prove mathematical identities, inequalities, and other invariants</a> </dd>
+<dd> <a href="induction.html?box=4" >Using structural induction to prove statements about recursively defined objects, e.g. strings and trees</a> </dd>
+</dl><dt><i class='bx bx-subdirectory-right' ></i><a href="modular.html?box=1" >Modular Arithmetic</a></dt> 
+<dd> <a href="modular.html?box=1" >Using the definitions of the div and mod operators on integers</a> </dd>
+<dd> <a href="modular.html?box=2" >Using divisibility and primality predicates</a> </dd>
+<dd> <a href="modular.html?box=3" >Applying the definition of congruence modulo n and modular arithmetic</a> </dd>
+</dl></div></div><br><br><div class="box"> 
+<h2><i class='bx bxs-message-square-edit'></i>Communication</h2><p> Description: Clearly and unambiguously communicate computational ideas using appropriate formalism. Translate across levels of abstraction.</p><hr><div class="column"> <dl> 
+<dt><i class='bx bx-subdirectory-right' ></i><a href="conventions.html?box=1" >Use language conventions to improve arguments</a></dt> 
+<dd> <a href="conventions.html?box=1" >Distinguishing between tautologies, contradictions, and contingencies</a> </dd>
+<dd> <a href="conventions.html?box=2" >Determining whether a given binary relation is symmetric, antisymmetric, reflexive, and/or transitive</a> </dd>
+<dd> <a href="conventions.html?box=3" >Determining whether a given function is one-to-one, onto, and/or invertible</a> </dd>
+<dd> <a href="conventions.html?box=4" >Determining whether a given binary relation is an equivalence relation and/or a partial order</a> </dd>
+<dd> <a href="conventions.html?box=5" >Distinguishing between structural induction, mathematical induction, and strong induction</a> </dd>
+<dd> <a href="conventions.html?box=6" >Using appropriate signpost words to improve readability of proofs, including 'arbitrary' and 'assume'</a> </dd>
+</dl><dt><i class='bx bx-subdirectory-right' ></i><a href="notation.html?box=1" >Mathematical definitions and notation</a></dt> 
+<dd> <a href="notation.html?box=1" >Precisely describing a set using appropriate notation e.g. roster method, set builder notation, and recursive definitions</a> </dd>
+<dd> <a href="notation.html?box=2" >Defining important sets of numbers, e.g. set of integers, set of rational numbers</a> </dd>
+<dd> <a href="notation.html?box=3" >Defining functions, predicates, and binary relations using multiple representations</a> </dd>
+<dd> <a href="notation.html?box=4" >Listing the truth tables of atomic boolean functions (and, or, xor, not, if, iff)</a> </dd>
+<dd> <a href="notation.html?box=5" >Using functions to compare cardinality of sets</a> </dd>
+<dd> <a href="notation.html?box=6" >Classifying sets into: finite sets, countably infinite sets, uncountable sets</a> </dd>
+</dl></div></div><br><br> 
+
+</body>
+
+</html>
