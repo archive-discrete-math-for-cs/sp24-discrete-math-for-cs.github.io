@@ -1,0 +1,17 @@
+{
+    "Numbers":{
+        "Icon": "NM"
+    },
+    "Recommendation Systems":{ 
+        "Icon": "RS"
+    },
+    "Computers":{
+        "Icon": "CP"
+    },
+    "Codes and Information":{
+        "Icon": "CI"
+    },
+    "Bioinformatics":{
+        "Icon":"BI"
+    }
+}
